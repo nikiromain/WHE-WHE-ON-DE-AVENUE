@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href ="css/styles.css">
+    <title>WHE WHE ON THE AVENUE</title>
+</head>
+<body>
+    <h1>WHE WHE ON D' Avenue</h1>
+    <section id ="playArea">
+        <div id = "bet">
+            <img src = "media/balls.png">
+            <section id = "bet">
+                 <button type ="button" id = "one" value ="1">$1</button>
+                 <button type ="button" id = "five" value = "5">$5</button>
+                 <button type ="button" id = "ten" value = "10">$10</button>
+                 <button type ="button" id = "twenty" value = "20">$20</button>
+            </section>
+        </div>
+        <div id = "numbers">
+            <span id ="numbtn"></span>
+            <button type = "button" id ="cash">Cash</button>
+            <button type = "reset" id = "clear">Clear</button>
+            </div>
+        </div>
+        <div id = "output">
+            <p>Numbers Selected</p>
+            <div id = "markOutput"></div>
+            <div class = "total">Total: $0</div>
+        </div>
+
+        <div class = "modal hide"> 
+            <h3>Cash</h3>
+            <div id = "modalContainer">
+                <div>
+                    <p>Enter Amount Received</p>
+                    <label>Total: </label><span id ="totalRead" class = "total"></span><br>
+                    <label for="cashReceived">Received:</label> <input type = "text" name="cashReceived" id = "cashReceived">
+                    <label for = "change">Change:</label> <input type = "text" id = "change" readonly>
+
+                    <button type = "button" id = "confirm">Confirm</button>
+                    <button type = "button" id = "close">Close</button>
+                </div>
+
+                <div id = "cashNumbers">
+                    <button type = "button"  value = "9">9</button><button type = "button"  value = "8">8</button><button type = "button"  value = "7">7</button><button type = "button"  value = "6">6</button>
+                    <button type = "button"  value = "5">5</button><button type = "button"  value = "4">4</button><button type = "button"  value = "3">3</button><button type = "button"  value = "2">2</button><button type = "button"  value = "1">1</button>
+                    <button type = "button"  value = "0">0</button type = "button"><button>.</button><button type = "button" value = "">d</button>
+                </div>
+            </div>
+        </div>
+            
+
+    </section>
+<script src = "js/app.js"></script>
+<script src = "js/bill.js"></script>
+</body>
+</html>
